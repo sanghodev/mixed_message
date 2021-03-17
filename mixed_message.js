@@ -11,14 +11,8 @@ You should: "trust no one"
 */
 
 let messageBox = ['Your sign is sun.', 'You are having good luck.', 'You should: "trust no one"'];
-
-console.log(Math.floor(Math.random(messageBox)))
-
-/*
-const messagePick = (messageBox) => {
-   // for (let i=0;i<message.length;i++) {}
-   
-}
-*/
-//messageBox();
-console.log('er');
+   const randomNum = (message) => {   
+      let num = Math.floor(Math.random(message) * 3)
+      console.log(messageBox[num]);
+   };
+   randomNum(messageBox);
